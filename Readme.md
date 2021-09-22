@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Антон](https://up.htmlacademy.ru/htmlcss/32/user/1855511).
-* Наставник: `Виталя Игошин`.
+* Студент: [Антон Heymoost](https://up.htmlacademy.ru/htmlcss/32/user/1855511).
+* Наставник: [Виталя Игошин Timeclot](https://htmlacademy.ru/profile/id353627).
 
 ---
 
