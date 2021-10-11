@@ -19,7 +19,18 @@ body {
   line-height: 21px;
   color: #242424;
   background-color: #FFFFFF;
-
+  display: flex;
+  flex-direction: column;
+}
+.html {
+  height: 100%;
+}
+.main-container {
+  flex-grow: 1;
+}
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 .page-header {
   color: #000000;
@@ -34,11 +45,40 @@ body {
   background-color: #FFFFFF;
   text-decoration: none;
 }
+.navigation {
+  display: flex;
+  width: 1057px;
+  margin: 0 auto;
+}
+
+.navigation-list navigation-user {
+  margin-left: auto;
+}
+.navigation-logo {
+  margin: 0 auto;
+}
 .main-title {
   color: #000000;
   background-color: #FFFFFF;
   background-image: url("../img/background-white.jpg");
   text-align: center
+}
+.index-title {
+  width: 720px;
+  padding: 0px 240px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.advantages{
+  width: 720px;
+  padding: 0px 240px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
 }
 .welcome {
   color: #000000;
@@ -54,30 +94,24 @@ body {
 .main-index {
   text-align: center;
 }
-.index-title {
-  font-family: "PT Sans", sans-serif;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-align: center;
+.advantages-list-2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.advantages-items-2 {
+  width: 250px;
+  padding: 75px;
+}
+.article {
+  display: flex;
 }
 .advantages-title {
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
-  text-transform: uppercase;
-  text-align: center;
-}
-.advantages{
-  font-family: "PT Sans", sans-serif;
-  font-size: 22px;
-  line-height: 36px;
-  text-align: center;
-}
-.hotel-title {
-  font-family: "PT Sans", sans-serif;
-  font-size: 30px;
-  line-height: 36px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -88,7 +122,23 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
-.hotel-search {
+.advantages-description-img {
+  padding: 0px 90px;
+}
+.advantages-description-img-2 {
+  padding: 0px 75px;
+}
+.hotel-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.hotel-info {
+  width: 720px;
+  padding: 0px 240px;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 36px;
@@ -106,24 +156,36 @@ body {
   margin: 0 auto;
 }
 .newsletter-title {
+  width: 720px;
+  padding: 0px 240px;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
 }
 .newsletter-text {
+  width: 720px;
+  padding: 0px 240px;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 36px;
   text-align: center;
 }
 .page-footer {
+  width: 1057px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
   color: #000000;
   font-style: normal;
   font-weight: 700;
 }
 .footer-contacts-address-phone {
+  width: 720px;
+  padding: 0px 240px;
+  margin: 0 auto;
   font-family: "PT Sans", sans-serif;
   font-size: 40px;
   line-height: 40px;
@@ -132,7 +194,23 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+.logo-html {
+  margin-left: auto;
+}
 /*  Стили каталога  */
+.page-container-2 {
+  width: 1200px;
+  margin: 0 auto;
+}
+.catalog {
+  width: 1057px;
+  margin: 0 auto;
+}
+.sorting {
+  display: flex;
+  margin: 0 auto;
+  width: 1057px;
+}
 .inner-header {
   color: #000000;
   background-color: #FFFFFF;
@@ -150,12 +228,21 @@ body {
   font-weight: 400;
 }
 .inner-header-title {
+  padding: 71;
   font-family: "PT Sans", sans-serif;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
   color: #FFFFFF;
 }
+.catalog-filter-group {
+  display: inline;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .filters {
   color: #FFFFFF;
   font-family: "PT Sans", sans-serif;
@@ -215,4 +302,9 @@ body {
   font-weight: 400;
   text-align: center;
   background-image: none;
+  display: block;
+  margin: 0 auto;
+}
+.hotel-card {
+  display: flex;
 }
