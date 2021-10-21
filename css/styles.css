@@ -42,7 +42,6 @@ body {
 }
 
 .page-container {
-  
   width: 1200px;
   margin: 0 auto;
   flex-grow: 1;
@@ -63,51 +62,32 @@ body {
 }
 
 .navigation-list {
+  width: 464px;
   padding-left: 0px;
+  padding-top: 19px;
+  padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   text-align: center;
-  
 }
 
-.navigation-list  > :nth-child(1) {
+.navigation-user {
+  width: 464px;
   padding-top: 19px;
   padding-bottom: 20px;
-  
-}
-
-.navigation-list  > :nth-child(2) {
-  margin-left: 33px;
-  padding-top: 19px;
-  padding-bottom: 20px;
-}
-
-.navigation-list  > :nth-child(3) {
-  margin-left: 33px;
-  padding-top: 19px;
-  padding-bottom: 20px;
-}
-
-.navigation-user > :nth-child(1) {
-  padding-top: 24px;
-  padding-bottom: 23px;
-}
-
-.navigation-user > :nth-child(2) {
-  margin-left: 21px;
-  padding-top: 24px;
-  padding-bottom: 23px;
-}
-
-.navigation-user > :nth-child(3) {
-  margin-left: 20px;
-  padding-top: 24px;
-  padding-bottom: 23px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0px;
+  margin: 0;
 }
 
 .navigation-link {
+  padding: 10px;
   font-family: "PT Sans", sans-serif;
   line-height: 26px;
   font-weight: 700;
@@ -118,12 +98,12 @@ body {
 }
 
 .navigation-logo {
+  display: block;
   padding: 0;
   margin: 0;
 }
 
 .main-container {
-  
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -138,7 +118,6 @@ body {
   height: 485px;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  
   display: block;
   margin: 0 auto;
 }
@@ -148,11 +127,11 @@ body {
 }
 
 .welcome-text {
+  padding-bottom: 79px;
   color: #000000;
   background-color: #FFFFFF;
   background-image: url("../img/background-white.jpg");
   width: 1200px;
-  height: 282px;
   text-align: center
 }
 
@@ -192,6 +171,7 @@ body {
 }
 
 .adventures-list-first {
+  flex-wrap: wrap;
   color: #000000;
   background-color: #FFFFFF;
   width: 250;
@@ -215,15 +195,15 @@ body {
 }
 
 .advantages-title {
-  vertical-align: top;
   padding-top: 98px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
-
 }
 
 .advantages-description-num {
@@ -240,6 +220,8 @@ body {
 
 .advantages-title-desc {
   width: 250;
+  padding-left: 50px;
+  padding-right: 50px;
   text-transform: uppercase;
   text-align: center;
   font-size: 24px;
@@ -286,6 +268,7 @@ body {
 
 .hotel-title {
   padding-top: 91px;
+  padding-bottom: 15px;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
@@ -296,16 +279,19 @@ body {
 }
 
 .hotel-info {
-  padding-top: 15px;
   width: 720px;
+  padding-top: 15px;
   padding: 0px 240px;
+  margin: 0;
+  text-align: center;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 36px;
-  text-align: center;
+  
 }
 
 .hotel-search-in-sedona {
+  display: inline-block;
   padding-top: 73px;
   padding-bottom: 91px;
 }
@@ -315,7 +301,6 @@ body {
   background-color: #000000;
   background-image: url("../img/background.jpg");
   width: 1200px;
-  height: 411px;
   background-size: 100% auto;
   background-repeat: no-repeat;
   display: block;
@@ -323,10 +308,8 @@ body {
 }
 
 .newsletter-title {
-  padding-top: 94px;
-  padding-bottom: 15px;
+  padding: 94px 240px 15px 240px;
   margin: 0px;
-  margin: auto;
   width: 720px;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
@@ -337,15 +320,33 @@ body {
 }
 
 .newsletter-text {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin: 0px;
-  margin: auto;
+  padding: 0 240px 26px 240px;
   width: 720px;
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 36px;
   text-align: center;
+}
+
+.newsletter-form {
+  display: flex;
+}
+
+.newsletter-email {
+  padding: 0 0 94px 200px;
+  margin: 0;
+}
+
+.field {
+  width: 600px;
+  height: 60px;
+}
+
+.newsletter-button {
+  width: 200px;
+  height: 60px;
+  padding: 0 200px 61px 0;
 }
 
 .page-footer {
@@ -359,6 +360,7 @@ body {
 }
 
 .footer-social-list {
+  width: 352px;
   display: flex;
   padding-top: 54px;
   padding-bottom: 50px;
@@ -377,19 +379,15 @@ body {
 }
 
 .footer-contacts-address {
-  width: 720px;
+  width: 352px;
   padding: 0;
   margin-top: 40px;
-  margin-right: 53px;
-  margin-left: 61px;
+  flex-wrap: wrap;
   margin-bottom: 30px;
   text-align: center;
 }
 
-.footer-contacts-address-phone {
-  width: 720px;
-  padding: 0px;
-  margin: 0 auto;
+.footer-contacts-address-phone {  
   font-family: "PT Sans", sans-serif;
   font-size: 40px;
   line-height: 40px;
@@ -397,6 +395,13 @@ body {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.logo-footer {
+  width: 352px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .logo-html {
@@ -409,12 +414,7 @@ body {
 
 /*  Стили каталога  */
 
-.page-container-2 {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.catalog {
+.main-inner {
   width: 1057px;
   margin: 0 auto;
 }
@@ -427,17 +427,36 @@ body {
 .sorting-title {
   display: flex;
   margin: 0 auto;
-  width: 1057px;
+  
 }
 
 .inner-header {
   color: #000000;
   background-color: #FFFFFF;
   background-image: url("../img/catalog-background.jpg");
+  width: 1200px;
+  height: 408px;
   background-size: 100% auto;
   background-repeat: no-repeat;
   display: block;
   margin: 0 auto;
+}
+
+.inner-header-title {
+  padding: 35px 601px 5px 72px;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.breadcrumbs {
+  padding: 0 1016px 45px 73px;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
@@ -448,19 +467,10 @@ body {
   font-weight: 400;
 }
 
-.inner-header-title {
-  padding: 71;
-  font-family: "PT Sans", sans-serif;
-  font-size: 60px;
-  line-height: 78px;
-  font-weight: 700;
-  color: #FFFFFF;
-}
-
 .catalog-filter-group {
   width: 150px;
   margin: 0;
-  padding: 0;
+  padding: 0 81px 86px 72px;
   list-style-type: none;
 }
 
@@ -500,6 +510,8 @@ body {
 }
 
 .catalog-list {
+  margin: 0;
+  padding: 31px 0 40px 0;
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -513,6 +525,20 @@ body {
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+}
+
+.pagination-item {
+  padding: 8px;
+  margin: 0;
+}
+
+.catalog-footer {
+  display: flex;
 }
 
 .number-of-pages {
