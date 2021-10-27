@@ -214,8 +214,9 @@ body {
 
 .advantages-description-img {
   margin: 0;
-  padding: 0px 90px;
+  padding: 0px 90px 77px 90px;
   padding-top: 26px;
+
 }
 
 .advantages-title-desc {
@@ -244,6 +245,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .adventures-list-second > :nth-child(1) {
@@ -497,35 +499,81 @@ body {
   font-weight: 700;
 }
 
+.catalog-list {
+  padding: 0;
+}
+
 .hotel-card-title {
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
+  margin: 0;
+}
+
+.hotel-card {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.hotel-big-picture {
+  height: 120px;
+}
+
+.sector-first {
+  display: grid;
+  grid-template-columns: min-content 151px auto;
+  grid-template-rows:    31px 23px 37px;
+  height: 120px;
+}
+
+.type-of-hotel {
+  margin: 0;
+  justify-self: start;
+}
+
+.price-hotel {
+  margin: 0;
+  justify-self: start;
+}
+
+.hotel-card-button {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: start;
+}
+
+.hotel-card-select {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: start;
 }
 
 .hotel-card-link {
-  text-decoration: none;
+  grid-column: 1 / -1;
+  justify-self: start;
 }
 
-.catalog-list {
-  margin: 0;
-  padding: 31px 0 40px 0;
-  color: #000000;
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
+.sector-second {
+  display: block;
+  margin-left: auto;
+}
+
+.icon-rating {
+  padding-top: 34px;
+  padding-bottom: 63px;
 }
 
 .hotel-card-rating {
-  color: #000000;
-  font-family: "PT Sans", sans-serif;
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: 400;
+  margin: 0;
 }
+
 
 .pagination {
   display: flex;
@@ -559,10 +607,6 @@ body {
   background-image: none;
   display: block;
   margin: 0 auto;
-}
-
-.hotel-card {
-  display: flex;
 }
 
 .catalog-alse{
