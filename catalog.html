@@ -41,7 +41,7 @@
           </ul>
         </nav>
       </header>
-    <!-- Фильтры -->
+     <!-- Фильтры -->
       <div class="page-container-2">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -139,9 +139,10 @@
       <section class="sorting-title">
         <h2 class="visually-hidden">Сортировка</h2>
         <p class="sorting-found-hotel">Найдено гостиниц: 38</p>
+        <div class="sorting-box">
         <form class="sorting-type">
           <label class="visually-hidden" for="sorting">Сортировка</label>
-          <select class="select-control" id="sorting" name="sorting">
+          <select class="sorting-select-control" id="sorting" name="sorting">
             <option value="popular">Сначала популярное</option>
             <option value="cheap" selected>Сначала дешёвое</option>
             <option value="expensive">Сначала дорогое</option>
@@ -158,6 +159,7 @@
         <a href="#" class="button list">
           <span class="visually-hidden">Показать список</span>
         </a>
+        </div>
         </div>
       </section>
       <!-- Список гостиниц -->
@@ -263,16 +265,18 @@
         </ul>
         <form class="number-of-pages">
           <label class="number-of-pages-text" for="show">Гостиниц на странице:</label>
-          <select class="select-control" id="show" name="show">
-            <option value="4-pages selected">4</option>
-            <option value="6-pages">6</option>
-            <option value="8-pages">8</option>
-          </select>
-          <button class="visually-hidden" type="submit">Показать страницы</button>
+            <div class="select-box">
+              <select class="pagination-select-control" id="show" name="show">
+                <option value="4-pages selected">4</option>
+                <option value="6-pages">6</option>
+                <option value="8-pages">8</option>
+              </select>
+              <button class="visually-hidden" type="submit">Показать страницы</button>
+            </div>
         </form>
       </div>
       </section>
-    </div>
+    
     </main>
     <!-- Рассылка -->
     <section class="newsletter-bg">
@@ -318,6 +322,7 @@
         <img class="logo-html" src="img/logo-html.svg" alt="Логотип .htmlacademy">
       </div>
      </footer>
+    </div>
     </div>
   </body>
 </html>

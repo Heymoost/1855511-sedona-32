@@ -428,8 +428,44 @@ body {
 
 .sorting-title {
   display: flex;
-  margin: 0 auto;
-  
+  margin: 0;
+}
+
+.sorting-found-hotel {
+  margin: 0;
+  padding: 50px 0 45px 0;
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+}
+
+.sorting-box {
+  margin-left: auto;
+}
+
+.sorting-type {
+  padding: 44px 81px 0 0;
+}
+
+.sorting-select-control {
+  width: 287px;
+  height: 48px;
+}
+
+.view:nth-child(3n) {
+  display: block;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  padding: 14px 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #F2F2F2;
+  background-color: #83B3D3;
+  text-decoration: none;
+  text-align: center;
 }
 
 .inner-header {
@@ -491,14 +527,6 @@ body {
   font-weight: 700;
 }
 
-.sorting-found-hotel {
-  color: #000000;
-  font-family: "PT Sans", sans-serif;
-  font-size: 30px;
-  line-height: 39px;
-  font-weight: 700;
-}
-
 .catalog-list {
   padding: 0;
 }
@@ -522,11 +550,14 @@ body {
   height: 120px;
 }
 
+.hotel-card-image {
+  object-fit: contain;
+}
+
 .sector-first {
   display: grid;
   grid-template-columns: min-content 151px auto;
-  grid-template-rows:    31px 23px 37px;
-  height: 120px;
+  grid-template-rows: repeat(3, min-content)
 }
 
 .type-of-hotel {
@@ -565,36 +596,69 @@ body {
   margin-left: auto;
 }
 
-.icon-rating {
-  padding-top: 34px;
-  padding-bottom: 63px;
-}
-
 .hotel-card-rating {
   margin: 0;
-}
-
-
-.pagination {
-  display: flex;
-  list-style-type: none;
-}
-
-.pagination-item {
-  padding: 8px;
-  margin: 0;
+  padding-top: 63px;
 }
 
 .catalog-footer {
   display: flex;
+  width: 1057px;
+  margin: 0 auto;
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  padding-top: 30px;
+  margin: 0;
+}
+
+.pagination-item {
+  margin: 0;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+  padding: 14px 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #F2F2F2;
+  background-color: #83B3D3;
+  text-decoration: none;
+  text-align: center;
 }
 
 .number-of-pages {
+  display: flex;
+  margin-left: auto;
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.number-of-pages-text {
+  margin: 0;
+  padding: 47px 51px 0 0; 
+}
+
+.select-box {
+  padding-top: 34px;
+}
+
+.pagination-select-control {
+  width: 160px;
+  height: 48px;
 }
 
 .newsletter-bg {
@@ -611,4 +675,6 @@ body {
 
 .catalog-alse{
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
