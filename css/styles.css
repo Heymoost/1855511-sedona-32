@@ -62,6 +62,7 @@ body {
 }
 
 .navigation-list {
+  padding: 10px;
   width: 464px;
   padding-left: 0px;
   padding-top: 19px;
@@ -71,23 +72,12 @@ body {
   list-style-type: none;
   margin: 0;
   text-align: center;
-}
-
-.navigation-user {
-  width: 464px;
-  padding-top: 19px;
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  list-style-type: none;
-  text-align: center;
-  padding-left: 0px;
-  margin: 0;
+  max-width: 285px;
 }
 
 .navigation-link {
-  padding: 10px;
+  position: relative;
+  display: block;
   font-family: "PT Sans", sans-serif;
   line-height: 26px;
   font-weight: 700;
@@ -97,10 +87,34 @@ body {
   text-decoration: none;
 }
 
+.navigation-list > :not(:last-child) {
+  padding-right: 33px;
+}
+
+.navigation-user {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  justify-content: flex-end;
+  margin-left: auto;
+  max-width: 240px;
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
 .navigation-logo {
   display: block;
   padding: 0;
-  margin: 0;
+  margin: auto;
 }
 
 .main-container {
@@ -124,6 +138,11 @@ body {
 
 .welcome-sedona {
   padding-top: 51px;
+}
+
+.line {
+  padding-top: 22px;
+  margin: 0;
 }
 
 .welcome-text {
@@ -219,6 +238,27 @@ body {
 
 }
 
+.icon-house {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 89px;
+  padding-bottom: 0;
+}
+
+.icon-food {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 91px;
+  padding-bottom: 0;
+}
+
+.icon-souvenirs {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 85px;
+  padding-bottom: 0;
+}
+
 .advantages-title-desc {
   width: 250;
   padding-left: 50px;
@@ -228,7 +268,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   margin: 0;
-  padding-top: 184px;
+  padding-top: 23px;
 }
 
 .advantages-desc {
@@ -294,8 +334,21 @@ body {
 
 .hotel-search-in-sedona {
   display: inline-block;
-  padding-top: 73px;
-  padding-bottom: 91px;
+  margin-top: 73px;
+  margin-bottom: 91px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 13px 17px;
+  border-color: #756257;
+  border-radius: 10px;
+  background: #756257;
+  width: 541px;
+  height: 34px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
 }
 
 .newsletter{
@@ -340,9 +393,39 @@ body {
   margin: 0;
 }
 
+.button-subscribe {
+  display: inline-block;
+  margin: 0px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-color: #83B3D3;
+  border-radius: 0px 10px 10px 0px;
+  background: #83B3D3;
+  width: 200px;
+  height: 60px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  border: none;
+}
+
 .field {
+  display: inline-block;
+  padding: 0;
   width: 600px;
   height: 60px;
+  border-radius: 10px 0px 0px 10px;
+  text-decoration: none;
+  border: none;
+  border-color: #F2F2F2;
+  background: #F2F2F2;
+  padding: 0 19px 0 22px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 .newsletter-button {
@@ -450,8 +533,14 @@ body {
 }
 
 .sorting-select-control {
+  padding-left: 19px;
   width: 287px;
   height: 48px;
+  border-radius: 4px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
 }
 
 .view:nth-child(3n) {
@@ -531,14 +620,48 @@ body {
   padding: 0;
 }
 
+.button-use {
+  margin: 0px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-color: #83B3D3;
+  border-radius: 4px;
+  background: #83B3D3;
+  width: 160px;
+  height: 48px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  border: none;
+}
+
+.button-reset {
+  margin-top: 20px;
+  color: #FFFFFF;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  width: 160px;
+  height: 23px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
 .hotel-card-title {
-  color: #000000;
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
   margin: 0;
-}
+  color: #000000;
+  }
 
 .hotel-card {
   display: flex;
@@ -555,9 +678,10 @@ body {
 }
 
 .sector-first {
+  padding-left: 37px;
   display: grid;
-  grid-template-columns: min-content 151px auto;
-  grid-template-rows: repeat(3, min-content)
+  grid-template-columns: auto 151px auto;
+  grid-template-rows: repeat(3, auto)
 }
 
 .type-of-hotel {
@@ -575,7 +699,20 @@ body {
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
-  justify-self: start;
+  width: 151px;
+  height: 37px;
+  margin: 0px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-color: #756257;
+  border-radius: 4px;
+  background: #756257;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  border: none;
 }
 
 .hotel-card-select {
@@ -584,11 +721,26 @@ body {
   grid-row-start: 3;
   grid-row-end: 4;
   justify-self: start;
+  width: 151px;
+  height: 37px;
+  margin: 0px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-color: #83B3D3;
+  border-radius: 4px;
+  background: #83B3D3;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  border: none;
 }
 
 .hotel-card-link {
   grid-column: 1 / -1;
   justify-self: start;
+  text-decoration: none;
 }
 
 .sector-second {
@@ -596,9 +748,44 @@ body {
   margin-left: auto;
 }
 
+.icon-rating {
+  padding-bottom: 63px;
+  justify-content: end;
+}
+
 .hotel-card-rating {
   margin: 0;
-  padding-top: 63px;
+  width: 160px;
+  height: 37px;
+  margin: 0px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-color: #F2F2F2;
+  border-radius: 4px;
+  background: #F2F2F2;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  border: none;
+}
+
+.pagination-show-more {
+  width: 625px;
+  height: 55px;
+  margin: 0px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-color: #83B3D3;
+  border-radius: 4px;
+  background: #83B3D3;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  border: none;
 }
 
 .catalog-footer {
