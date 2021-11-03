@@ -164,7 +164,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  }
+}
 
 .welcome-desc{
   width: 720px;
@@ -661,7 +661,7 @@ body {
   font-weight: 700;
   margin: 0;
   color: #000000;
-  }
+}
 
 .hotel-card {
   display: flex;
