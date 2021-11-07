@@ -75,16 +75,17 @@ body {
   text-align: center;
 }
 
-
 .navigation-link {
+  padding: 6px 12px 6px 12px;
   position: relative;
   font-family: "PT Sans", sans-serif;
+  font-size: 20px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
   color: #000000;
-  background-color: #FFFFFF;
   text-decoration: none;
+  border: 2px solid transparent;
 }
 
 .navigation-link:hover {
@@ -94,16 +95,17 @@ body {
 .navigation-link:focus {
   border-radius: 10px;
   color: #756257;
-  outline: 2px solid #83B3D3;
+  border: 2px solid #83B3D3;
 }
 
-.navigation-link:active::before {
+.navigation-link-select::before {
   position: absolute;
-  width: 100%;
   border: 1px solid #756257;
   background-color: #000000;
+  right: 10px;
+  left: 10px;
   content: "";
-  top: 44px;
+  top: 51px;
 }
 
 .navigation-item-icon {
@@ -121,7 +123,7 @@ body {
 }
 
 .navigation-link-svg:hover {
-  color: #756257;
+  fill: #756257;
 }
 
 .navigation-link:focus {
@@ -131,7 +133,7 @@ body {
 }
 
 .navigation-list > :not(:last-child) {
-  padding-right: 33px;
+  margin-right: 5px;
 }
 
 .navigation-user {
@@ -179,9 +181,9 @@ body {
 
 .navigation-link-user {
   display: inline-block;
-  width: 160px;
-  padding-top: 8px;
-  padding-bottom: 9px;
+  width: 154px;
+  padding-top: 5px;
+  padding-bottom: 6px;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -192,6 +194,19 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  border: 3px solid transparent;
+}
+
+.navigation-link-user:hover {
+  background: #615048;
+}
+
+.navigation-link-user:focus {
+  border: 3px solid #83B3D3;
+}
+
+.navigation-link-user:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .field:focus {
@@ -433,7 +448,7 @@ body {
   border-radius: 10px;
   background: #756257;
   width: 541px;
-  height: 34px;
+  border: 3px solid transparent;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
@@ -445,16 +460,11 @@ body {
 }
 
 .hotel-search-in-sedona:focus {
-  width: 575px;
-  height: 60px;
-  box-sizing: border-box;
   border: 3px solid #83B3D3;
 }
 
 .hotel-search-in-sedona:active {
-  color: #FFFFFF;
-  opacity: 0.3;
-  background: #615048;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .newsletter{
@@ -528,19 +538,14 @@ body {
 }
 
 .button-subscribe:active {
-  color: #FFFFFF;
-  opacity: 0.3;
-  background: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .field {
-  display: inline-block;
-  padding: 0;
-  width: 559px;
-  height: 60px;
+  width: 553px;
+  height: 54px;
   border-radius: 10px 0px 0px 10px;
   text-decoration: none;
-  border: none;
   border-color: #F2F2F2;
   background: #F2F2F2;
   padding: 0 19px 0 22px;
@@ -548,6 +553,7 @@ body {
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
+  border: 3px solid transparent;
 }
 
 .field:hover {
@@ -555,18 +561,25 @@ body {
 }
 
 .field:focus {
-  box-sizing: border-box;
-  width: 600px;
-  height: 60px;
-  outline: 3px solid #83B3D3;
+  outline:3px solid #83B3D3;
 }
 
 .field:active {
-  box-sizing: border-box;
-  width: 600px;
-  height: 60px;
-  border: 2px solid #000000;
+  border-color: #000000;
 }
+
+.field:not(:empty) {
+  outline: none;
+  border-color: #000000;
+}
+
+.class-input:not(:focus):invalid {
+  border: 2px solid #FF5757;
+}
+.class-input:invalid:not(:focus) {
+  border: 2px solid #FF5757;
+}
+
 
 .newsletter-button {
   width: 200px;
@@ -576,6 +589,8 @@ body {
 
 .page-footer {
   width: 1057px;
+  padding: 40px 0 34px 0;
+  align-items: center;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -587,8 +602,7 @@ body {
 .footer-social-list {
   width: 352px;
   display: flex;
-  padding-top: 50px;
-  padding-left: 0;
+  padding: 0;
   margin: 0;
   list-style-type: none;
   flex-wrap: wrap;
@@ -614,7 +628,6 @@ body {
 
 .footer-contacts-address {
   width: 352px;
-  height: 120px;
   flex-wrap: wrap;
   text-align: center;
   margin: 0;
@@ -622,8 +635,6 @@ body {
 
 .footer-contacts-address-phone {
   display: block;
-  padding-top: 40px;
-  padding-bottom: 30px;
   font-family: "PT Sans", sans-serif;
   font-size: 40px;
   line-height: 40px;
@@ -631,6 +642,7 @@ body {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  border: 3px solid transparent;
 }
 
 .footer-contacts-address-phone:hover {
@@ -639,7 +651,6 @@ body {
 
 .footer-contacts-address-phone:focus {
   box-sizing: border-box;
-  height: 70px;
   border: 3px solid #83B3D3;
   border-radius: 10px;
 }
@@ -656,11 +667,16 @@ body {
   width: 115px;
   height: 34px;
   padding: 0;
-  margin-top: 42px;
 }
 
 .logo-html:hover {
-  background: #756257;
+  fill-opacity: #756257;
+}
+
+.logo-html:focus {
+  box-sizing: border-box;
+  border: 3px solid #83B3D3;
+  border-radius: 10px;
 }
 
 /*  Стили каталога  */
@@ -795,7 +811,7 @@ body {
   border-radius: 4px;
   background: #83B3D3;
   width: 160px;
-  
+
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -911,14 +927,13 @@ body {
 }
 
 .sector-second {
-  display: block;
   margin-left: auto;
   height: 160px;
 }
 
 .icon-rating {
   padding-bottom: 63px;
-  justify-content: end;
+  justify-items: center;
 }
 
 .hotel-card-rating {
@@ -926,12 +941,18 @@ body {
   width: 160px;
   height: 37px;
   margin: 0px;
+  border-radius: 4px;
+  border-color: #F2F2F2;
+  background: #F2F2F2;
+}
+
+.text-rating {
+  padding: 9px;
+  margin: 0;
+  text-align: center;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
-  border-color: #F2F2F2;
-  border-radius: 4px;
-  background: #F2F2F2;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
