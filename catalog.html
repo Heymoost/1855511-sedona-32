@@ -54,14 +54,18 @@
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
+            <a class="breadcrumbs-link-home" href="index.html">
               <img class="home" src="img/icon-home.svg" alt="Иконка домашней страницы">
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
+          <li class="arrow">
+              <svg class="arrow-svg" width="5" height="8" viewBox="0 0 5 8" fill="none">
+                <path d="M4.8 3.60005L0.999999 0.200049C0.799999 4.88311e-05 0.399999 4.88311e-05 0.0999989 0.200049C-0.200001 0.400049 -0.100001 0.800049 0.0999989 1.00005L3.4 4.00005L0.199999 7.00005C-1.11759e-06 7.20005 -1.11759e-06 7.60005 0.199999 7.80005C0.199999 7.90005 0.499999 8.00005 0.599999 8.00005C0.699999 8.00005 0.899999 7.90005 0.999999 7.80005L4.8 4.40005C5.1 4.20005 5.1 3.80005 4.8 3.60005Z" fill="white"/>
+                </svg>                
+          </li>
           <li class="breadcrumbs-item">
-
-            <a class="breadcrumbs-link">Гостиницы</a>
+            <a class="breadcrumbs-link" href="">Гостиницы</a>
           </li>
         </ul>
         <section class="catalog-filters">
@@ -99,21 +103,21 @@
                     <li class="catalog-filter-item">
                       <label class="control">
                         <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="hotel" checked>
-                        <span class="control-infrastructure"></span>
+                        <span class="control-infrastructure-circle"></span>
                         <span class="control-label">Гостиница</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
                         <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="motel">
-                          <span class="control-infrastructure"></span>
+                          <span class="control-infrastructure-circle"></span>
                           <span class="control-label">Мотель</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
                         <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="apartments">
-                        <span class="control-infrastructure"></span>
+                        <span class="control-infrastructure-circle"></span>
                         <span class="control-label">Апартаменты</span>
                       </label>
                     </li>
@@ -121,22 +125,32 @@
               </fieldset>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                  <button class="range-toggle toggle-min" type="button">
-                    <span class="visually-hidden">Изменить минимальную цену.</span>
-                  </button>
-                  <button class="range-toggle toggle-max" type="button">
-                    <span class="visually-hidden">Изменить максимальную цену.</span>
-                  </button>
+                <div class="range-wrapper-inputs">
                   <label class="catalog-filter-label">
-                    от <input class="catalog-filter-input" placeholder="0" type="number" name="min-price">
+                  <input class="catalog-filter-input" placeholder="0" type="number" name="min-price"> от
                   </label>
                   <label class="catalog-filter-label">
-                    до <input class="catalog-filter-input" placeholder="9000" type="number" name="max-price">
+                  <input class="catalog-filter-input" placeholder="9000" type="number" name="max-price"> до
                   </label>
+                </div>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 10px; width: 100px">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
           <div class="wrapper">
             <button class="button-use" type="submit">Применить</button>
-            <button class="button-reset" type="reset">Сбросить</button>
+            <div class="reset">
+              <button class="button-reset" type="reset">Сбросить</button>
+            </div>
           </div>
           </form>
         </section>
@@ -212,10 +226,10 @@
               <p class="type-of-hotel">Гостиница</p>
               <p class="price-hotel">От 4000 ₽</p>
             <div class="more-button">
-              <a href="#" class="hotel-card-button button">Подробнее</a>
+              <a href="#" class="hotel-card-button">Подробнее</a>
             </div>
             <div class="favorites-button">
-            <a href="#" class="hotel-card-select button">В избранное</a>
+            <a href="#" class="hotel-card-select">В избранное</a>
             </div>
             </div>
           <div class="sector-second">
@@ -328,10 +342,10 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <a class="pagination-link pagination-link-next" href="#">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
+            <a class="pagination-link pagination-link-last" href="#">10</a>
           </li>
         </ul>
         <form class="number-of-pages">
