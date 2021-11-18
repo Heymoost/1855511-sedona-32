@@ -7,8 +7,8 @@
   </head>
   <body>
     <!-- Шапка -->
-    <div class="page-container">
-     <header class="page-header">
+  <div class="page-container">
+    <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -22,7 +22,7 @@
           </li>
         </ul>
         <a class="navigation-logo" href="index.html">
-          <img class="navigation-logo-sedona" src="img/logo.svg" alt="Логотип города Седоны">
+          <img class="navigation-logo-sedona" src="img/logo.svg" alt="Логотип города Седоны." width="138" height="70">
         </a>
         <ul class="navigation-user">
           <li class="navigation-item-icon">
@@ -46,7 +46,7 @@
                 <ul class="popover-items-list">
                   <li class="popover-item">
                     <a class="popover-item-link" href="#">
-                      <img class="hotel-card-image-small" src="img/hotel-2-small.png" width="48" height="48" alt="Фото мотеля Desert Quail Inn">
+                      <img class="hotel-card-image-small" src="img/hotel-2-small.png" width="48" height="48" alt="Фото мотеля Desert Quail Inn.">
                       <div class="popover-item-card">
                         <p class="popover-item-title">Desert Quail Inn</p>
                         <p class="popover-item-price-type">Мотель</p>
@@ -64,7 +64,7 @@
                   </li>
                   <li class="popover-item">
                     <a class="popover-item-link" href="#">
-                      <img class="hotel-card-image-small" src="img/hotel-3-small.png" width="48" height="48" alt="Фото мотеля Desert Quail Inn">
+                      <img class="hotel-card-image-small" src="img/hotel-3-small.png" width="48" height="48" alt="Фото апартаментов Desert Quail Inn.">
                       <div class="popover-item-card">
                         <p class="popover-item-title">Villas at Poco Diablo</p>
                         <p class="popover-item-price-type">Апартаменты</p>
@@ -82,7 +82,7 @@
                   </li>
                 </ul>
                 <div class="button-all">
-                  <button class="button-all-favorites">ВСЕ ИЗБРАННЫЕ</button>                    
+                  <button class="button-all-favorites" type="button">ВСЕ ИЗБРАННЫЕ</button>                    
                 </div>
               </div>
             </div>
@@ -97,7 +97,7 @@
     <main class="main-container">
       <div class="welcome">
         <div class="welcome-wrapper">
-            <img class="welcome-sedona" src="img/welcome.svg" alt="Фото приветствия" width="458" height="352">
+            <img class="welcome-sedona" src="img/welcome.svg" alt="Фото приветствия." width="458" height="352">
             <svg class="line" width="1200" height="57" viewBox="0 0 1200 57" fill="none">
               <path d="M0 57V0L250 24V0L600 57L950 0V24L1200 0V57H0Z" fill="white"/>
             </svg>
@@ -231,14 +231,15 @@
     </div>
     <div class="modal-container">
       <div class="modal search-hotel">
-        <button class="modal-close-button" type="button">
+        <button class="modal-close-button" type="button" alt="Закрыть">
           <svg class="close-svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
             <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" fill="black"/>
           </svg>            
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        
         <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-date-arrival">
               <label class="tittle-date-arrival" for="date-arrival">Дата заезда:</label>
@@ -252,32 +253,32 @@
             </div>
             <div class="adults">
               <label class="tittle-adults" for="date-exit">Взрослые:</label>
-              <button class="minus" type="button">
+              <button class="minus" type="button" alt="Меньше">
                 <svg class="minus-svg" width="13" height="1" viewBox="0 0 13 1" fill="none">
                   <path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
                 </svg>              
               </button>
               <input class="number-adults" type="number" id="number-adults" name="number-adults" value="2">
-              <button class="plus" type="button">
+              <button class="plus" type="button" alt="Больше">
                 <svg class="plus-svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
                   <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
                 </svg>
               </button>
             </div>
             <div class="tooltip-children">
-              <button class="tooltip" type="button">
+              <button class="tooltip" type="button" alt="Дополнительная информация">
                 <p class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
               </button>
             </div>
             <div class="children">
               <label class="tittle-children" for="date-exit">Дети:</label>
-              <button class="minus-children" type="button">
+              <button class="minus-children" type="button" alt="Меньше">
                 <svg class="minus-svg" width="13" height="1" viewBox="0 0 13 1" fill="none">
                   <path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
                 </svg>              
               </button>
               <input class="number-children" type="number" id="number-children" name="number-children" value="1">
-              <button class="plus-children" type="button">
+              <button class="plus-children" type="button" alt="Больше">
                 <svg class="plus-svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
                   <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
                 </svg>
@@ -285,7 +286,7 @@
             </div>
           </form>
           <div class="modal-bottom">
-            <button class="modal-bottom-search" type="button">Найти</button>
+            <button class="modal-bottom-search" type="button" alt="Найти">Найти</button>
           </div>
         </section>
       </div>
