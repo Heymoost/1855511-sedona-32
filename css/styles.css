@@ -112,6 +112,27 @@ body {
   top: 51px;
 }
 
+.navigation-logo {
+  display: block;
+  padding: 0;
+  left: 50%;
+  margin: auto;
+  position: absolute;
+  transform: translate(-50%);
+  outline: none;
+}
+
+.navigation-user {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+  outline: none;
+}
+
 .navigation-item-icon {
   position: relative;
   padding: 20px 0 23px 0;
@@ -125,22 +146,10 @@ body {
 .navigation-link-svg {
   position: relative;
   padding: 4px 16px;
-  
   color: #000000;
   background-color: #FFFFFF;
   text-decoration: none;
   border: 3px solid transparent;
-  outline: none;
-}
-
-.navigation-user {
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  justify-content: flex-end;
   outline: none;
 }
 
@@ -204,11 +213,11 @@ body {
 }
 
 .popover {
-  
+  visibility: hidden;
   position: absolute;
   top: 61px;
   right: -170px;
-  z-index: 1;
+  z-index: 10;
   box-sizing: border-box;
   width: 400px;
   height: 232px;
@@ -233,6 +242,11 @@ body {
   content: "";  
 }
 
+.popover-content {
+  position: relative;
+  height: 100%;
+}
+
 .popover-items-list {
   padding: 0;
 }
@@ -246,7 +260,6 @@ body {
 .popover-item:not(:nth-child(1)) {
   padding: 0px 17px 0px 13px;
 }
-
 
 .popover-item-link {
   display: flex;
@@ -283,19 +296,6 @@ body {
   position: relative;
   width: 180px;
   height: 48px;
-}
-
-.popover-close-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 72px;
-  height: 70px;
-}
-
-.popover-content {
-  position: relative;
-  height: 100%;
 }
 
 .popover-item-title {
@@ -426,16 +426,6 @@ body {
   outline: 3px solid #83B3D3;
 }
 
-.navigation-logo {
-  display: block;
-  padding: 0;
-  left: 50%;
-  margin: auto;
-  position: absolute;
-  transform: translate(-50%);
-  outline: none;
-}
-
 .main-container {
   text-align: center;
   display: flex;
@@ -508,29 +498,6 @@ body {
   background: #83B3D3;
 }
 
-.adventures-list-first {
-  flex-wrap: wrap;
-  color: #000000;
-  background-color: #FFFFFF;
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.adventures-list-first > :nth-child(1) {
-  background: rgba(131, 179, 211, 0.12);
-}
-
-.adventures-list-first > :nth-child(2) {
-  background: #FFFFFF;
-}
-
-.adventures-list-first > :nth-child(3) {
-  background: rgba(131, 179, 211, 0.12);
-}
-
 .advantages-title {
   padding-top: 98px;
   padding-left: 50px;
@@ -552,6 +519,29 @@ body {
 .advantages-description-img {
   margin: 0;
   padding: 31px 90px 77px 90px;
+}
+
+.adventures-list-first {
+  flex-wrap: wrap;
+  color: #000000;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.adventures-list-first > :nth-child(1) {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.adventures-list-first > :nth-child(2) {
+  background: #FFFFFF;
+}
+
+.adventures-list-first > :nth-child(3) {
+  background: rgba(131, 179, 211, 0.12);
 }
 
 .icon-house {
@@ -957,8 +947,9 @@ body {
 }
 
 .modal-container {
-  
+  visibility: hidden;
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   display: flex;
@@ -1752,7 +1743,6 @@ body {
 .control-input[type="checkbox"]:active + .control-infrastructure {
   background-color: rgba(255, 255, 255, 0.3);
 }
-
 
 .control-infrastructure-circle {
   position: absolute;
