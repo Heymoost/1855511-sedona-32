@@ -1593,6 +1593,7 @@ body {
 }
 
 .breadcrumbs-item-home {
+  display: flex;
   padding-right: 3px;
   margin: 0;
   margin-left: -5px;
@@ -1654,8 +1655,7 @@ body {
 }
 
 .arrow-svg {
-  padding-right: 10px;
-  padding-bottom: 1px;
+  padding: 7px 10px 1px 4px;
 }
 
 .arrow-svg path {
